@@ -14,59 +14,62 @@ body {
 /* Header Start */ 
 header {
     width: 100%;
+    align-items: center;
+    justify-content: space-around;
     background-color: #FFF6C3;
     top: 0;
-    height: 85px;
-    position: fixed;
+    position: sticky;
     z-index: 10;
+    display: flex;
 }
 
 .logo {
-    float: left;
-    margin-left: 100px;
+    display: flex;
+    margin-right: 165px;
     margin-top: -3px;
 }
 
 .logo-sumbar {
-    width: 50px;
+    width: 55px;
+    height: 62px;
     margin: 15px;
     cursor: pointer;
 }
 
 .judul {
-    float: right;
+    /* float: right; */
     margin-left: 10px;
     margin-top: -1px;
     cursor: pointer;
 }
 
 .prov {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
 }
 
 .desc {
     float: left;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 nav {
-    float: right;
-    margin-right: 100px;
-    margin-top: 15px;
+    /* float: right; */
+    margin-top: -10px;
+    margin-left: 150px;
     position: sticky;
 }
 
 nav li {
     display: inline;
-    list-style-type: none;
+    list-style: none;
 }
 
 nav a {    
     margin: 0px 15px;
     text-decoration: none;
-    float: left;
+    /* float: left; */
     font-weight: 400;
     transition: 0.2s;
     color: black;
@@ -82,16 +85,21 @@ nav a:hover {
     transition: 0.2s;
 }
 
+ul.navbar li.icon {
+    display: none;
+}
+
 /* Header End */ 
 
 /* Jumbotron Start */
 .jumbotron {
-    height: 580px;
-    margin-top: 80px;
+    height: 550px;
+    padding: 0;
+    /* margin-top: 80px; */
     background-size: cover;
     background-position: center;
-    padding: 0 100px;
-    margin-bottom: 50px;
+    /* padding: 0 100px; */
+    margin-bottom: 0px;
 }
 
 .jumbotron h1 {
@@ -103,4 +111,85 @@ nav a:hover {
     margin-bottom: -180px;
 }
 
+.jumbotron .banner {
+    margin-top: 0;
+}
+
 /* Jumbotron End */
+
+@media (max-width: 1000px){
+    /* Header Start */
+    .logo {
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: -3px;
+    }
+
+    nav {
+        margin-left: 0px;
+    }
+
+    .judul {
+        margin: 0px;
+    }
+
+    ul.navbar li {
+        display: none;
+    }
+
+    ul.navbar li.icon {
+        display: inline;
+    }
+
+    ul.navbar.responsive {
+        position: relative;
+    }
+
+    ul.navbar.responsive li.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    ul.navbar.responsive li {
+        display: inline;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    ul.navbar.responsive li a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Header End */
+}
+
+@media (max-width: 680px){
+    /* Header Start */
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo-sumbar {
+        width: auto;
+        height: 45px;
+        margin: 15px;
+        cursor: pointer;
+    }
+    
+    .prov {
+        font-size: 15px;
+    }
+    
+    .desc {
+        font-size: 12px;
+    }
+
+    nav a {
+        font-size: small;
+    }
+
+    /* Header End */
+}
