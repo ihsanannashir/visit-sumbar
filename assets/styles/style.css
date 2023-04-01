@@ -11,6 +11,10 @@ body {
     padding: 0;
 }
 
+footer {
+    text-align: center;
+}
+
 /* Header Start */ 
 header {
     width: 100%;
@@ -37,7 +41,6 @@ header {
 }
 
 .judul {
-    /* float: right; */
     margin-left: 10px;
     margin-top: -1px;
     cursor: pointer;
@@ -55,7 +58,6 @@ header {
 }
 
 nav {
-    /* float: right; */
     margin-top: -10px;
     margin-left: 150px;
     position: sticky;
@@ -67,9 +69,8 @@ nav li {
 }
 
 nav a {    
-    margin: 0px 15px;
+    margin: 0px 10px;
     text-decoration: none;
-    /* float: left; */
     font-weight: 400;
     transition: 0.2s;
     color: black;
@@ -81,7 +82,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    font-weight: bold;
+    color: #F4B183;
     transition: 0.2s;
 }
 
@@ -107,6 +108,7 @@ ul.navbar li.icon {
     font-size: 100px;
     padding-top: 100px;
     margin-bottom: -180px;
+    scroll-margin-top: 5.2rem;
 }
 
 .jumbotron .banner {
@@ -117,7 +119,67 @@ ul.navbar li.icon {
 
 /* Content Start */
 .container {
-    margin: 20px;
+    margin: 0px 80px;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.container h1 {
+    font-size: xx-large;
+}
+
+.tentang {
+    display: flex;
+    margin-top: 20px;
+}
+
+.underline {
+    background: linear-gradient(180deg, #ffffff00 65%, #FFF6C3 65%);
+    display: inline;
+}
+
+.tentang-desc {
+    padding: 15px 50px 15px 15px;
+}
+
+.minang {
+    margin: 60px 0;
+}
+
+.minang-desc {
+    padding: 15px;
+}
+
+.minang-desc h1 {
+    text-align: center;
+}
+
+.galeri {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.peta-sumbar {
+    width: 480px;
+    height: auto;
+    padding: 10px;
+}
+
+.foto-adat {
+    width: auto;
+    height: 280px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.foto-adat:hover {
+    transform: translate(0, -10px);
+    top: -10px;
 }
 /* Content End */
 
@@ -175,6 +237,50 @@ ul.navbar li.icon {
         padding-top: 120px;
     }
     /* Jumbotron End */
+
+    /* Content Start */
+    .tentang {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .tentang-desc {
+        padding: 10px;
+    }
+
+    .tentang-desc h1 {
+        text-align: center;
+    }
+
+    .peta {
+        text-align: center;
+    }
+
+    .peta-sumbar {
+        width: 420px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .minang {
+        margin: auto;
+    }
+
+    .galeri {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-adat {
+        width: 70%;
+        height: auto;
+        padding: 10px;
+        transition: 0.3s;
+        position: relative;
+    }
+    /* Content End */
 }
 
 @media (max-width: 750px){
@@ -219,4 +325,17 @@ ul.navbar li.icon {
         padding-top: 50px;
     }
     /* Jumbotron End */
+
+    /* Content Start */
+    .container {
+        margin: 0px 20px;
+    }
+
+    .peta-sumbar {
+        width: 90%;
+        height: auto;
+        padding: 5px;
+    }
+    /* Content End */
+
 }
