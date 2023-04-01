@@ -13,7 +13,9 @@ body {
 
 footer {
     text-align: center;
-    margin: 10px 5px;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #FFF6C3;
 }
 
 /* Header Start */ 
@@ -316,8 +318,37 @@ input[type=text]:focus, textarea:focus {
     font-weight: 400;
 }
 
+aside {
+    margin: 100px 80px 20px 80px;
+    align-items: center;
+
+}
+
 aside h1 {
     font-size: xx-large;
+    text-align: center;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+.bio-desc {
+    margin: 0px 40px;
+}
+
+.foto {
+    margin: 5px 20px;
+}
+
+.pict {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
 }
 /* Contact End */
 
@@ -438,6 +469,10 @@ aside h1 {
 }
 
 @media (max-width: 750px){
+    footer {
+        font-size: x-small;
+    }
+
     /* Header Start */
     .logo {
         margin-left: 0;
@@ -497,4 +532,23 @@ aside h1 {
         margin: 30px;
     }
     /* Contact End */
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foto {
+        text-align: center;
+    }
+
+    .bio-desc {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .bio-desc h3 {
+        text-align: center;
+    }
 }
