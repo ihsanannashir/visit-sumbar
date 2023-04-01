@@ -7,3 +7,9 @@ hamburger.addEventListener('click', function () {
         a.className = "navbar";
     }
 });
+
+function showInput() {
+    document.getElementById('alerta').style.display = "block";
+    let nama = document.getElementById('name').value;
+    document.getElementById("showNama").innerHTML = nama;
+}

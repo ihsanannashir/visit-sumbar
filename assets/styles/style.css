@@ -13,6 +13,7 @@ body {
 
 footer {
     text-align: center;
+    margin: 10px 5px;
 }
 
 /* Header Start */ 
@@ -108,7 +109,6 @@ ul.navbar li.icon {
     font-size: 100px;
     padding-top: 100px;
     margin-bottom: -180px;
-    scroll-margin-top: 5.2rem;
 }
 
 .jumbotron .banner {
@@ -170,18 +170,156 @@ ul.navbar li.icon {
 }
 
 .foto-adat {
+    border-radius: 25px;
     width: auto;
     height: 280px;
-    padding: 10px 15px;
+    margin: 10px 25px;
     transition: 0.3s;
     position: relative;
 }
 
 .foto-adat:hover {
     transform: translate(0, -10px);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
     top: -10px;
 }
+
+.wisata {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.card {
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    margin: 5px 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
+    top: -5px;
+}
+
+.card-title {
+    color: white;
+    text-align: center;
+    text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    font-weight: bold;
+}
+
+.container-wisata {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
 /* Content End */
+
+/* Contact Start */
+.hubungi {
+    margin: 30px 80px;
+}
+
+.hubungi h1 {
+    text-align: center;
+}
+
+.form {
+    margin: 0px 20px;
+}
+
+.send:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
+    top: -10px;
+}
+
+.tombolForm {
+    align-items: center;
+    text-align: center;
+}
+
+.send {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFD966;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    letter-spacing: 1px;
+    outline: none;
+    text-decoration: none;
+    transition: 0.6s;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.close {
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 1px;
+}
+
+.close:hover {
+    color: #F4B183;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+    resize: none;
+}
+
+input[type=text]:focus, textarea:focus {
+    background-color: #f5f3c1a5;
+}
+
+.alert {
+    padding: 1px;
+    background-color: #FFF6C3;
+    color: black;
+    margin-top: 20px;
+    display: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.alert h4 {
+    font-weight: 400;
+}
+
+aside h1 {
+    font-size: xx-large;
+}
+/* Contact End */
 
 @media (max-width: 1000px){
     /* Header Start */
@@ -276,9 +414,25 @@ ul.navbar li.icon {
     .foto-adat {
         width: 70%;
         height: auto;
-        padding: 10px;
+        margin: 10px;
         transition: 0.3s;
         position: relative;
+    }
+
+    .container-wisata {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        height: 500px;
+        margin: 15px 10px;
+    }
+
+    .card-title {
+        font-size: xx-large;
     }
     /* Content End */
 }
@@ -338,4 +492,9 @@ ul.navbar li.icon {
     }
     /* Content End */
 
+    /* Contant Start */
+    .hubungi {
+        margin: 30px;
+    }
+    /* Contact End */
 }

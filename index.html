@@ -61,12 +61,58 @@
                     <img src="./assets/images/minang-wedding.jpeg" class="foto-adat" alt="Baralek Minang">
                 </div>
             </article>
+
+            <article class="wisata" id="wisata">
+                <h1><span class="underline">Wisata</span></h1>
+                <div class="container-wisata">
+                    <div class="card" style="background-image: url('./assets/images/istano-pagaruyuang.jpeg')">
+                        <span class="card-title">Istano Paguruyuang</span>
+                    </div>
+                    <div class="card" style="background-image: url('./assets/images/danau-maninjau.jpeg')">
+                        <span class="card-title">Danau Maninjau</span>
+                    </div>
+                    <div class="card" style="background-image: url('./assets/images/jam-gadang.webp')">
+                        <span class="card-title">Jam Gadang</span>
+                    </div>
+                    <div class="card" style="background-image: url('./assets/images/danau-singkarak.jpeg')">
+                        <span class="card-title">Danau Singkarak</span>
+                    </div>
+                    <div class="card" style="background-image: url('./assets/images/lembah-anai.jpeg')">
+                        <span class="card-title">Lembah Anai</span>
+                    </div>
+                </div>
+            </article>
         </div>
+
+        <div class="hubungi" id="hubungi">
+            <div class="form">
+                <h1><span class="underline">Hubungi Kami</span></h1>
+                <div class="formulir">
+                    <p>Nama</p>
+                    <input type="text" name="Nama" id="name" placeholder="Masukkan nama anda">
+                    <p>Email</p>
+                    <input type="text" name="Email" id="email" placeholder="Masukkan email anda">
+                    <p>Pesan</p>
+                    <textarea name="motivation" id="motivasi" placeholder="Masukkan pesan anda"></textarea>
+                    <div class="tombolForm">                   
+                        <a class="send" onclick="showInput()">KIRIM</a>                 
+                    </div>
+                </div>
+                <div class="alert" id="alerta">
+                    <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <h4>Terima Kasih <span id="showNama"></span>! Pesanmu telah terkirim!</h4>                    
+                </div>  
+            </div>
+        </div>
+
+        <aside>
+            <h1><span class="underline">Biodata</span></h1>
+        </aside>
 
     </main>
 
     <footer>
-        <p>&copy; 2023 - Created by M. Ihsan An-Nashir, All Right Reserved</p>
+        <p class="underline">&copy; 2023 - Created by M. Ihsan An-Nashir, All Right Reserved</p>
     </footer>
 
     <script src="./assets/script.js"></script>
